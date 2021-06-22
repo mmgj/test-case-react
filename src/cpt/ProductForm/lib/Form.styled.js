@@ -41,7 +41,7 @@ export const StyledButton = styled.button`
   cursor: pointer;
   border-width: 0;
   border-radius: 999px;
-  padding: 0.6rem 2.4rem;
+  padding: 0.8rem 2.4rem;
   margin: 0 1rem 0 0;
   font-size: 1.4rem;
   color: ${white};
