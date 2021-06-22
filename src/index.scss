@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'ProfilFont';
+  src: url('./assets/Profilfont-Regular-Web.woff') format('woff'),
+    url('./assets/Profilfont-Regular-Web.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  &.dbg-outline {
+    * {
+      outline: 1px solid rgba(255, 0, 0, 0.2);
+      :hover {
+        outline: 1px solid rgba(255, 0, 0, 0.6);
+      }
+    }
+    * * {
+      outline: 1px solid rgba(0, 255, 0, 0.2);
+      :hover {
+        outline: 1px solid rgba(0, 255, 0, 0.6);
+      }
+    }
+    * * * {
+      outline: 1px solid rgba(0, 0, 255, 0.2);
+      :hover {
+        outline: 1px solid rgba(0, 0, 255, 0.6);
+      }
+    }
+    * * * * {
+      outline: 1px solid rgba(255, 0, 255, 0.2);
+      :hover {
+        outline: 1px solid rgba(255, 0, 0, 0.6);
+      }
+    }
+    * * * * * {
+      outline: 1px solid rgba(0, 255, 255, 0.2);
+      :hover {
+        outline: 1px solid rgba(0, 255, 0, 0.6);
+      }
+    }
+    * * * * * * {
+      outline: 1px solid rgba(255, 255, 0, 0.2);
+      :hover {
+        outline: 1px solid rgba(0, 0, 255, 0.6);
+      }
+    }
+    * * * * * * * {
+      outline: 1px solid rgba(255, 0, 0, 0.2);
+      :hover {
+        outline: 1px solid rgba(255, 0, 0, 0.6);
+      }
+    }
+    * * * * * * * * {
+      outline: 1px solid rgba(0, 255, 0, 0.2);
+      :hover {
+        outline: 1px solid rgba(0, 255, 0, 0.6);
+      }
+    }
+    * * * * * * * * * {
+      outline: 1px solid rgba(0, 0, 255, 0.2);
+      :hover {
+        outline: 1px solid rgba(0, 0, 255, 0.6);
+      }
+    }
+  }
+}
