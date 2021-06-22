@@ -60,10 +60,10 @@ const ProductForm = ({ onWin }) => {
 
           <Input label="Email Address" name="email" type="email" placeholder="navn@navnesen.no" />
 
-          <Button disabled={false} type="submit">
+          <Button disabled={isSubmitting} type="submit">
             Beregn pris!
           </Button>
-          <Button disabled={false} inverted type="reset">
+          <Button inverted type="reset">
             Avbryt
           </Button>
         </Form>

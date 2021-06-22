@@ -195,7 +195,7 @@ export const StyledPairedInputs = styled.div`
   box-sizing: border-box;
   @media screen and (max-width: 767px) {
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
   }
 
   @media screen and (max-width: 320px) {
