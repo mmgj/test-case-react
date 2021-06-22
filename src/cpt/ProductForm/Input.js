@@ -7,7 +7,7 @@ import { StyledInputAndLabel } from './lib/Form.styled';
 
 import FieldMeta from './FieldMeta';
 
-const Input = ({ label, id, name, help, ...props }) => {
+const Input = ({ label, id, type, name, help, ...props }) => {
   /* TODO: do a check here to make sure either id or name has a value */
   const [field, meta] = useField({ id, name, ...props });
   return (
@@ -19,6 +19,7 @@ const Input = ({ label, id, name, help, ...props }) => {
         className={`input ${checkMetaError(meta) ? 'error' : ''}`}
         id={id || name}
         name={name || id}
+        type={type}
       />
       {checkMetaError(meta) ? (
         <FieldMeta mode="error">{meta.error}</FieldMeta>
@@ -33,12 +34,14 @@ Input.defaultProps = {
   id: undefined,
   name: undefined,
   help: undefined,
+  type: 'text',
 };
 
 Input.propTypes = {
   id: string,
   name: string,
   help: string,
+  type: string,
   label: string.isRequired,
 };
 

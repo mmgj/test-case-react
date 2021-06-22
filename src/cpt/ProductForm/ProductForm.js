@@ -33,12 +33,7 @@ const ProductForm = ({ onWin }) => {
       {({ isSubmitting }) => (
         <Form>
           {isSubmitting && <Loader />}
-          <Input
-            label="Bilens registreringsnummer"
-            name="registration"
-            type="text"
-            placeholder="AB 12345"
-          />
+          <Input label="Bilens registreringsnummer" name="registration" placeholder="AB 12345" />
 
           <Select label="Din Bonus" name="bonus" help="Velg et alternativ">
             <option value="" disabled hidden>
@@ -54,8 +49,8 @@ const ProductForm = ({ onWin }) => {
           <Input label="Fødselsnummer" name="fnr" type="number" placeholder="11 siffer" />
 
           <StyledPairedInputs>
-            <Input label="Fornavn" name="firstName" type="text" placeholder="Navn" />
-            <Input label="Etternavn" name="lastName" type="text" placeholder="Navnesen" />
+            <Input label="Fornavn" name="firstName" placeholder="Navn" />
+            <Input label="Etternavn" name="lastName" placeholder="Navnesen" />
           </StyledPairedInputs>
 
           <Input label="Email Address" name="email" type="email" placeholder="navn@navnesen.no" />

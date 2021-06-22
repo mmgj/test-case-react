@@ -45,21 +45,25 @@ export const StyledButton = styled.button`
   margin: 0 1rem 0 0;
   font-size: 1.4rem;
   color: ${white};
+  box-shadow: 0 0 0 0px;
   background-color: ${black};
-  transition: transform 200ms ease-out;
+  transition: box-shadow ${niceFade}ms ease-out;
   &:hover,
   &:active {
-    animation: backgroundTransition 200ms ease-out;
+    box-shadow: 0 0 0 1px ${goodBlue};
+    animation: backgroundTransition ${niceFade}ms ease-out;
     background-color: ${goodBlue};
   }
   &.inverted {
     border-width: 1px;
     color: black;
     background: ${white};
+    box-shadow: 0 0 0 0px;
     &:hover,
     &:active {
-      animation: borderTransition 200ms ease-out;
+      animation: borderTransition ${niceFade}ms ease-out;
       border-color: ${goodBlue};
+      box-shadow: 0 0 0 1px ${goodBlue};
       color: ${goodBlue};
     }
   }

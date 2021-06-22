@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-import { pageTransition } from 'lib/helpers';
+import { pageTransition } from '../lib/helpers';
 
 import Page from './Page';
 import Heading from './Heading';
